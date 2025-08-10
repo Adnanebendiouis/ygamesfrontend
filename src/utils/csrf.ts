@@ -8,27 +8,23 @@ export const getCookie = (name: string): string | null => {
 };
 
 export const refreshCSRFToken = async (): Promise<string | null> => {
-  await fetch("https://api.ygames.shop/api/csrf/", {
+  const res = await fetch("https://api.ygames.shop/api/csrf/", {
     credentials: "include",
   });
-  return getCookie("csrftoken");
+  const data = await res.json();
+  console.log('CSRF Token refreshed:', data.csrfToken);
+  return data.csrfToken || null;
 };
 
 export const fetchWithCSRF = async (url: string, options: RequestInit = {}) => {
-  let csrfToken = getCookie("csrftoken");
-  console.log("CSRF Token:", csrfToken);
-
-  // If no token, fetch it first
-  if (!csrfToken) {
-    csrfToken = await refreshCSRFToken();
-  }
-  console.log("CSRF Token:", csrfToken);
+  const csrfToken = await refreshCSRFToken();
+  console.log('Using CSRF Token:', csrfToken);
   return fetch(url, {
     ...options,
-    credentials: "include", // important for cookies
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
-      "X-CSRFToken": getCookie("csrftoken") || "",
+      "X-CSRFToken": csrfToken || "",
       ...(options.headers || {}),
     },
   });
