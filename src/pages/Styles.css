@@ -1,0 +1,82 @@
+.products-page {
+  height: auto;
+  padding: 0px 40px;
+  
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.add-product {
+  background-color: #2ecc71;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.products-table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-collapse: collapse;
+  max-height: 1000px;
+}
+
+.products-table th, .products-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  text-align: left;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Scrollable table */
+.products-table tbody {
+  display: block;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.products-table thead,
+.products-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.products-table thead {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+/* Disabled button style */
+.confirm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

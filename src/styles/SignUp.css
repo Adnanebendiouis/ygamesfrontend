@@ -1,0 +1,102 @@
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #FBFBF9;
+}
+
+.wrapper1 {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    ;
+    border-radius: 10px;
+    background-color: #FBFBF9;
+    width: 100%;
+
+    background: white;
+
+
+}
+.input-box1 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+}
+.accept {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.accept label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Adds spacing between the checkbox and label text */
+    font-size: 12px;
+    /* Adjusts the height of the label */
+
+
+}
+
+.accept input[type="checkbox"] {
+    margin: auto 0;
+    /* Removes default margin for better alignment */
+    width: 12px;
+    /* Makes the checkbox smaller */
+    height: 12px;
+    /* Makes the checkbox smaller */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.login-link span {
+    color: #C30A1D;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn1 {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: #C30A1D;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.c3 {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.c3:active {
+    transform: translateX(10px);
+}
+.c3 p {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+}
