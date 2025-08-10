@@ -16,18 +16,19 @@ export const refreshCSRFToken = async (): Promise<string | null> => {
 
 export const fetchWithCSRF = async (url: string, options: RequestInit = {}) => {
   let csrfToken = getCookie("csrftoken");
+  console.log("CSRF Token:", csrfToken);
 
   // If no token, fetch it first
   if (!csrfToken) {
     csrfToken = await refreshCSRFToken();
   }
-
+  console.log("CSRF Token:", csrfToken);
   return fetch(url, {
     ...options,
     credentials: "include", // important for cookies
     headers: {
       "Content-Type": "application/json",
-      "X-CSRFToken": csrfToken || "",
+      "X-CSRFToken": getCookie("csrftoken") || "",
       ...(options.headers || {}),
     },
   });
