@@ -1,0 +1,30 @@
+.home-page {
+    height: 85vh;
+}
+
+/* Prevents layout issues on smaller devices */
+@media (max-width: 768px) {
+    .home-page {
+        height: auto; /* Let the content decide the height */
+        min-height: 70vh;
+        padding: 1rem;
+    }
+}
+
+.searchbar-space {
+    width: 100%;
+    height: 100px;
+}
+
+/* Adjust height of search bar area for smaller screens */
+@media (max-width: 768px) {
+    .searchbar-space {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchbar-space {
+        height: 60px;
+    }
+}

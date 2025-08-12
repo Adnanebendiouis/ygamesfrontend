@@ -1,0 +1,221 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #FBFBF9;
+}
+
+.wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+
+    border-radius: 10px;
+    background-color: #FBFBF9;
+    width: 100%;
+
+    background: white;
+
+
+}
+
+
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: #C30A1D;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.logo-img1 {
+
+    height: 26px;
+    width: 114px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.c0 {
+
+    margin: 20px auto 10px auto;
+    width: fit-content;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+}
+
+.c1 {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+    cursor: pointer;
+
+
+}
+
+.c2 {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.c2:active {
+    transform: translateX(-10px);
+}
+
+.c1,
+.c2 p {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+}
+
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    
+}
+
+.sentence {
+
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+     /* Adds underline to resemble hyperlinks */
+    cursor: pointer; /* Optional: Adds pointer cursor for interactivity */
+}
+
+.remember-forget label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Adds spacing between the checkbox and label text */
+    font-size: 12px;
+    /* Adjusts the height of the label */
+
+
+}
+
+.remember-forget input[type="checkbox"] {
+    margin: auto 0;
+    /* Removes default margin for better alignment */
+    width: 12px;
+    /* Makes the checkbox smaller */
+    height: 12px;
+    /* Makes the checkbox smaller */
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.register-link span {
+    color: #C30A1D;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .main {
+        height: auto; /* Let content decide height */
+        padding: 20px;
+        align-items: flex-start; /* Prevent squashing on small height screens */
+    }
+
+    .wrapper {
+        max-width: 90%; /* Reduce width to fit smaller screens */
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .input-box input {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .sentence {
+        font-size: 14px;
+    }
+
+    .remember-forget {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .register-link {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,196 @@
+.user-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #2d3748;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #4a5568;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.name {
+  
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #2b6cb0;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background-color: #2c5282;
+}
+
+.orders {
+  max-width: 700px;
+}
+
+.order-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.order-card button {
+  margin-top: 10px;
+  background-color: #38a169;
+  border: none;
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-card button:hover {
+  background-color: #2f855a;
+}
+
+.danger-zone {
+  background-color: #fff5f5;
+  padding: 30px;
+  border: 1px solid #feb2b2;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.danger-zone h2 {
+  color: #c53030;
+}
+
+.danger {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.danger:hover {
+  background-color: #c53030;
+}
+.user-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #2d3748;
+  color: #fff;
+  padding: 30px 20px;
+  flex-shrink: 0; /* Empêche de rétrécir */
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  margin-left: 240px; /* Pas nécessaire si .sidebar fait partie du flex */
+}
+
+.modern-button{
+  background-color: rgb(196, 13, 13) ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+
+}
+
+.modern-button1{
+  background-color: rgb(0, 0, 0) ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}

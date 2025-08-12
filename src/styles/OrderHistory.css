@@ -1,0 +1,228 @@
+.order-history-container {
+    padding: 40px;
+    height: 100vh;
+    background-color: #f5f7fa;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.order-history-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.table-wrapper1 {
+    background-color: white;
+    border-radius: 0px 12px 12px 12px;
+    padding: 3px 20px 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.order-table1 {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.order-table1 thead {
+    color: #000000;
+}
+
+.order-table1 tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table1 td,
+.order-table1 th {
+    padding: 1rem;
+    text-align: left;
+
+    vertical-align: middle;
+}
+
+.order-table1 tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: 0.2s;
+}
+
+.status {
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.en-cours {
+    background-color: #fff3cd;
+    color: #856404;
+}
+ .livre {
+    background-color: #d4edda;
+    color: #155724;
+    
+}
+ .recu {
+    background-color: #d4edda;
+    color: #155724;
+}
+ .annule {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.id-column {
+    font-size: 0.85rem;
+    color: #666;
+    word-break: break-word;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.actions-wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+}
+
+.icon.confirm {
+    color: #2ecc71;
+}
+
+.icon.delete {
+    color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .order-history-container {
+        padding: 1rem;
+    }
+
+    .order-table1 th,
+    .order-table1 td {
+        padding: 0.6rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+}
+
+.filter-dropdown {
+    background-color: white;
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: fit-content
+}
+.dropdown-content label{
+    
+    padding: 5px;
+}
+/* Your original styles stay the same above */
+
+/* Tablet adjustments */
+@media screen and (max-width: 1024px) {
+    .order-history-container {
+        padding: 20px;
+    }
+
+    .order-table1 {
+        min-width: 600px;
+    }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .order-history-container {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .table-wrapper1 {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .order-table1 th,
+    .order-table1 td {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+}
+
+/* Small mobile: turn table into cards */
+@media screen and (max-width: 500px) {
+    .order-table1,
+    .order-table1 thead,
+    .order-table1 tbody,
+    .order-table1 th,
+    .order-table1 td,
+    .order-table1 tr {
+        display: block;
+        width: 100%;
+    }
+
+    .order-table1 thead {
+        display: none;
+    }
+
+    .order-table1 tr {
+        margin-bottom: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .order-table1 td {
+        padding: 8px;
+        text-align: right;
+        position: relative;
+        border: none;
+    }
+
+    .order-table1 td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-weight: 600;
+        text-align: left;
+        color: #555;
+    }
+
+    .status {
+        width: auto;
+        display: inline-block;
+    }
+}
